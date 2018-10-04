@@ -120,7 +120,7 @@ function url($dominio) {
          $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
      }
 
-     $test = dns_get_record('arnauamado.com', DNS_NS);
+     $test = dns_get_record('$dominio', DNS_NS);
      
 
      return "
