@@ -23,6 +23,7 @@ tr:nth-child(even) {
   <tr>
     <th>Domini</th>
     <th>Estat</th>
+    <th>Captura</th>
     <th>DNS A</th>
     <th>DNS 1</th>
     <th>DNS 2</th>
@@ -35,10 +36,10 @@ tr:nth-child(even) {
 
 echo url("arnauamado.com");
 echo url("digitalsignageweb.com");
+echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
 echo url("crm.digitalsignagevision.com");
 echo url("scrm.digitalsignagevision.com");
-echo url("digitalsignagevision.com");
 echo url("inmo.digitalsignagevision.com");
 echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
@@ -121,6 +122,14 @@ function url($dominio) {
      }
 
      $test = dns_get_record($dominio, DNS_NS);
+
+
+     //$URLpagina = "https://siguemedia.com";
+    $PagespeedDataGoogle = file_get_contents("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=$url&screenshot=true");
+    $PagespeedDataGoogle = json_decode($PagespeedDataGoogle, true);
+    $captura = $PagespeedDataGoogle['screenshot']['data'];
+    $captura = str_replace(array('_','-'),array('/','+'),$captura); 
+   // echo "<center><img src=\"data:image/jpeg;base64,".$captura."\" /></center>";
      
 
      return "
@@ -128,9 +137,11 @@ function url($dominio) {
     <tr>
         <td>" . $url . "</td>
         <td>" . $estatreturn . "</td>
+        <td><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></td>
         <td>" . $ipdomini . "</td>
         <td>" . $test['0']['target'] . "</td>
         <td>" . $test['1']['target'] . "</td>
+        
     </tr>
 
 
