@@ -165,7 +165,7 @@ function url($dominio) {
         <td><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></td>
         <td>" . $ipdomini . "</td>
         <td>" . $test['0']['target'] . "</td>
-        <td>" . $test['1']['target'] . "</td>
+        <td>" . $test['1']['target'] . "<a href='capturawebgran.php?url=arnauamado.com&enviar=Enviar+URL'>Visit W3Schools.com!</a></td>
         
     </tr>
 
