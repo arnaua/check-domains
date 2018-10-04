@@ -76,6 +76,7 @@ function url($dominio) {
     $url = "https://";
     $url .= "$dominio";
     $codihtml = "";
+    $ipdomini = "";
 
 
 
@@ -104,15 +105,21 @@ function url($dominio) {
             $estatreturn= '<a style="color:green;">OK</a>';
 
         } else {
-            $estatreturn= '<a style="color:red;">ERROR</a> ('.$codihtml.')';
+            $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
             //return false;
         }
      } else {
          //return false;
-         $estatreturn= '<a style="color:red;">ERROR</a> ('.$codihtml.')';
+         $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
+     $ipdomini = gethostbyname($dominio);
+
+     if ($ipdomini == "94.76.201.97") {
+         $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
+     }
+     
 
      return "
 
@@ -120,7 +127,7 @@ function url($dominio) {
     <tr>
         <td>" . $url . "</td>
         <td>" . $estatreturn . "</td>
-        <td>" . gethostbyname($dominio) . "</td>
+        <td>" . $ipdomini . "</td>
         <td>" . $result['4']['target'] . "</td>
         <td>" . $result['5']['target'] . "</td>
     </tr>
