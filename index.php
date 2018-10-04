@@ -34,7 +34,7 @@ tr:nth-child(even) {
 <?php
 
 echo url("arnauamado.com");
-/*echo url("digitalsignageweb.com");
+echo url("digitalsignageweb.com");
 echo url("business.digitalsignagevision.com");
 echo url("crm.digitalsignagevision.com");
 echo url("scrm.digitalsignagevision.com");
@@ -64,7 +64,7 @@ echo url("xn--repararbaerasvalencia-kbc.com");
 echo url("terapiavilanova.com");
 echo url("yoigonegociosbcn.com");
 echo url("yoigonegociostgn.com");
-echo url("repararbanyera.cat");*/
+echo url("repararbanyera.cat");
 
 
 function url($dominio) {
