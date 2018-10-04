@@ -16,5 +16,6 @@ $captura = str_replace(array('_','-'),array('/','+'),$captura);
  
 //Mostramos en el navegador la captura de pantalla
 echo "<center><img src=\"data:image/jpeg;base64,".$captura."\" /></center>";
+echo $URLpagina;
 }
 ?>
