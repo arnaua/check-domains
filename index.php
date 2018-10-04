@@ -119,17 +119,18 @@ function url($dominio) {
      if ($ipdomini == "94.76.201.97") {
          $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
      }
+
+     $test = dns_get_record('arnauamado.com', DNS_NS);
      
 
      return "
-
 
     <tr>
         <td>" . $url . "</td>
         <td>" . $estatreturn . "</td>
         <td>" . $ipdomini . "</td>
-        <td>" . $result['4']['target'] . "</td>
-        <td>" . $result['5']['target'] . "</td>
+        <td>" . $test['0']['target'] . "</td>
+        <td>" . $test['1']['target'] . "</td>
     </tr>
 
 
