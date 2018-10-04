@@ -21,7 +21,7 @@ tr:nth-child(even) {
 <body>
 <table>
   <tr>
-    <th>Web</th>
+    <th>Domini</th>
     <th>Estat</th>
     <th>DNS A</th>
     <th>DNS 1</th>
@@ -75,6 +75,7 @@ function url($dominio) {
     $DNSNS2= "";
     $url = "https://";
     $url .= "$dominio";
+    $codihtml = "";
 
 
 
@@ -93,6 +94,8 @@ function url($dominio) {
     // Ver http://php.net/manual/es/reserved.variables.httpresponseheader.php
     if( isset( $http_response_header ) ) {
         sscanf( $http_response_header[0], 'HTTP/%*d.%*d %d', $httpcode );
+
+        $codihtml = $httpcode;
  
         //Aceptar solo respuesta 200 (Ok), 301 (redirección permanente) o 302 (redirección temporal)
         $accepted_response = array( 200, 301, 302 );
@@ -101,12 +104,12 @@ function url($dominio) {
             $estatreturn= '<a style="color:green;">OK</a>';
 
         } else {
-            $estatreturn= '<a style="color:red;">ERROR</a>';
+            $estatreturn= '<a style="color:red;">ERROR</a> ('.$codihtml.')';
             //return false;
         }
      } else {
          //return false;
-         $estatreturn= '<a style="color:red;">ERROR</a>';
+         $estatreturn= '<a style="color:red;">ERROR</a> ('.$codihtml.')';
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
