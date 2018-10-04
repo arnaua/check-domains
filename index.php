@@ -1,8 +1,52 @@
 <?php
 
+echo url("arnauamado.com");
+echo url("digitalsignageweb.com");
+echo url("business.digitalsignagevision.com");
+echo url("crm.digitalsignagevision.com");
+echo url("scrm.digitalsignagevision.com");
+echo url("digitalsignagevision.com");
+echo url("inmo.digitalsignagevision.com");
+echo url("premium.digitalsignagevision.com");
+echo url("standard.digitalsignagevision.com");
+echo url("https://senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
+echo "</br>";
+echo url("siguemedia.com");
+echo url("cloud.siguemedia.com");
+echo url("examsbaixcamp.siguemedia.com");
+echo url("cambrapropietat.siguemedia.com");
+echo "</br>";
+echo url("bolsasdepasteleria.com");
+echo url("bossa.com");
+echo url("chefmecsa.com");
+echo url("creixellnatura.org");
+echo url("englishangout.com");
+echo url("espaiuniversal.com");
+echo url("esportadaptat.org");
+echo url("pescadoacasa.com");
+echo url("rechousevideo.com");
+echo url("reformasbaixllobregat.com");
+echo url("reformatuinmueble.com");
+echo url("xn--repararbaerasmadrid-33b.com");
+echo url("xn--repararbaerasvalencia-kbc.com");
+echo url("terapiavilanova.com");
+echo url("yoigonegociosbcn.com");
+echo url("yoigonegociostgn.com");
+echo url("repararbanyera.com");
 
-function url_exists( $url = NULL ) {
+
+function url($dominio) {
  
+    $estatreturn= "";
+    $DNSA= "";
+    $DNSNS1= "";
+    $DNSNS2= "";
+    $url = "https://";
+    $url .= "$dominio";
+
+
+
+
     if( empty( $url ) ){
         return false;
     }
@@ -21,593 +65,21 @@ function url_exists( $url = NULL ) {
         //Aceptar solo respuesta 200 (Ok), 301 (redirección permanente) o 302 (redirección temporal)
         $accepted_response = array( 200, 301, 302 );
         if( in_array( $httpcode, $accepted_response ) ) {
-            return true;
+           // return true;
+            $estatreturn= '<a style="color:green;">OK</a>';
+
         } else {
-            return false;
+            $estatreturn= '<a style="color:red;">ERROR</a>';
+            //return false;
         }
      } else {
-         return false;
+         //return false;
+         $estatreturn= '<a style="color:red;">ERROR</a>';
      }
-}
-$url = "https://";
-$dominio = "arnauamado.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo " </br>";
-
-$url = "https://";
-$dominio = "digitalsignageweb.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "business.digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "crm.digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "inmo.digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "premium.digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "senator.digitalsignagevision.com";
-$url .= "$dominio";
-$url .= "/tiempo/Tiempo%20Barajas.html";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "standard.digitalsignagevision.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-echo "</br>";
-
-
-
-$url = "https://";
-$dominio = "siguemedia.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "cloud.siguemedia.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "examsbaixcamp.siguemedia.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "cambrapropietat.siguemedia.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-echo "</br>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$url = "https://";
-$dominio = "bolsasdepasteleria.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "bossa.cat";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
 
+     $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
 
-$url = "https://";
-$dominio = "chefmecsa.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-
-$url = "https://";
-$dominio = "creixellnatura.org";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-
-$url = "https://";
-$dominio = "englishangout.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "espaiuniversal.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "esportadaptat.org";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-
-
-$url = "https://";
-$dominio = "pescadoacasa.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-$url = "https://";
-$dominio = "rechousevideo.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "reformasbaixllobregat.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "reformatuinmueble.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "xn--repararbaerasmadrid-33b.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "xn--repararbaerasvalencia-kbc.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "setsailtgn.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-
-$url = "https://";
-$dominio = "soniasafineblanking.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "terapiavilanova.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "yoigonegociosbcn.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "yoigonegociostgn.com";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
-}
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-$url = "https://";
-$dominio = "repararbanyera.cat";
-$url .= "$dominio";
-$urlexists = url_exists( $url );
-
-echo "Estat: ";
-if($urlexists == true){
-    echo '<a style="color:green;">OK</a>';
-}
-
-if($urlexists == false){
-    echo '<a style="color:red;">ERROR</a>';
+     return "Estat: " . $estatreturn . " | Web: <a href='$url'>" . $url . "</a> | DNS registro A: " . gethostbyname($dominio) . " / Servidores DNS: " . $result['4']['target'] . " / " . $result['5']['target'] . "</br>";
 }
-echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
-echo gethostbyname($dominio);
-echo "</br>";
-
-
-
 
 ?>
