@@ -590,6 +590,23 @@ echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
 echo gethostbyname($dominio);
 echo "</br>";
 
+$url = "https://";
+$dominio = "repararbanyera.cat";
+$url .= "$dominio";
+$urlexists = url_exists( $url );
+
+echo "Estat: ";
+if($urlexists == true){
+    echo '<a style="color:green;">OK</a>';
+}
+
+if($urlexists == false){
+    echo '<a style="color:red;">ERROR</a>';
+}
+echo " | Web: <a href='$url'>$url</a> | DNS registro A: ";
+echo gethostbyname($dominio);
+echo "</br>";
+
 
 
 
