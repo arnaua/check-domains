@@ -1,11 +1,5 @@
 <?php
-function microtime_float()
-{
-list($useg, $seg) = explode(" ", microtime());
-return ((float)$useg + (float)$seg);
-}
-
-$tiempo_inicio = microtime_float();
+$tiempo_inicial = microtime(true);
 ?>
 
 <html>
@@ -165,10 +159,35 @@ echo "</br>";
 echo "</br>";
 echo "</br>";
 
-$tiempo_fin = microtime_float();
-$tiempo = $tiempo_fin - $tiempo_inicio;
+    
+    $tiempo_final = microtime(true);
+    $tiempo = $tiempo_final - $tiempo_inicial;
+    $tiempo = conversorSegundosHoras($tiempo);
 
-echo "Tiempo empleado: " . ($tiempo_fin - $tiempo_inicio);
+    
+    
+    echo "El tiempo de ejecución del archivo ha sido de " . $tiempo . " segundos";
+
+    function conversorSegundosHoras($tiempo_en_segundos) {
+    $horas = floor($tiempo_en_segundos / 3600);
+    $minutos = floor(($tiempo_en_segundos - ($horas * 3600)) / 60);
+    $segundos = $tiempo_en_segundos - ($horas * 3600) - ($minutos * 60);
+
+    $hora_texto = "";
+    if ($horas > 0 ) {
+        $hora_texto .= $horas . "h ";
+    }
+
+    if ($minutos > 0 ) {
+        $hora_texto .= $minutos . "m ";
+    }
+
+    if ($segundos > 0 ) {
+        $hora_texto .= $segundos . "s";
+    }
+
+    return $hora_texto;
+}
 
 ?>
 
