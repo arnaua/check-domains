@@ -1,3 +1,13 @@
+<?php
+function microtime_float()
+{
+list($useg, $seg) = explode(" ", microtime());
+return ((float)$useg + (float)$seg);
+}
+
+$tiempo_inicio = microtime_float();
+?>
+
 <html>
 <head>
 <style>
@@ -150,6 +160,15 @@ function url($dominio) {
 
      
 }
+
+echo "</br>";
+echo "</br>";
+echo "</br>";
+
+$tiempo_fin = microtime_float();
+$tiempo = $tiempo_fin - $tiempo_inicio;
+
+echo "Tiempo empleado: " . ($tiempo_fin - $tiempo_inicio);
 
 ?>
 
