@@ -162,7 +162,8 @@ function url($dominio) {
     <tr>
         <td>" . $url . "</td>
         <td>" . $estatreturn . "</td>
-        <td><a href='capturawebgran.php?url=".$url."&enviar=Enviar+URL'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>
+        <!--<td><a href='capturawebgran.php?url=".$url."&enviar=Enviar+URL'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>-->
+        <td><a href='".$url."'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>
         <td>" . $ipdomini . "</td>
         <td>" . $test['0']['target'] . "</td>
         <td>" . $test['1']['target'] . "</td>
