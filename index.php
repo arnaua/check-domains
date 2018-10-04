@@ -1,3 +1,36 @@
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Web</th>
+    <th>Estat</th>
+    <th>DNS A</th>
+    <th>DNS 1</th>
+    <th>DNS 2</th>
+  </tr>
+
+  
+
+
 <?php
 
 echo url("arnauamado.com");
@@ -11,12 +44,10 @@ echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
 echo url("senator.digitalsignagevision.com");
-echo "</br>";
 echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
-echo "</br>";
 echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
@@ -80,7 +111,27 @@ function url($dominio) {
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
 
-     return "Estat: " . $estatreturn . " | Web: <a href='$url'>" . $url . "</a> | DNS registro A: " . gethostbyname($dominio) . " / Servidores DNS: " . $result['4']['target'] . " / " . $result['5']['target'] . "</br>";
+     return "
+
+
+    <tr>
+        <td>" . $url . "</td>
+        <td>" . $estatreturn . "</td>
+        <td>" . gethostbyname($dominio) . "</td>
+        <td>" . $result['4']['target'] . "</td>
+        <td>" . $result['5']['target'] . "</td>
+    </tr>
+
+
+     ";
+
+
+     
 }
 
 ?>
+
+</table>
+
+</body>
+</html>
