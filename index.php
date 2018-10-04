@@ -17,7 +17,7 @@ echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
 echo "</br>";
 echo url("bolsasdepasteleria.com");
-echo url("bossa.com");
+echo url("bossa.cat");
 echo url("chefmecsa.com");
 echo url("creixellnatura.org");
 echo url("englishangout.com");
@@ -32,7 +32,7 @@ echo url("xn--repararbaerasvalencia-kbc.com");
 echo url("terapiavilanova.com");
 echo url("yoigonegociosbcn.com");
 echo url("yoigonegociostgn.com");
-echo url("repararbanyera.com");
+echo url("repararbanyera.cat");
 
 
 function url($dominio) {
