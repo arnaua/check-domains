@@ -27,7 +27,7 @@ tr:nth-child(even) {
   <tr>
     <th>Domini</th>
     <th>Estat</th>
-    <th>Captura<a href="sensecaptura.php">X sense captura</a></th>
+    <th>Captura<a href="index.php">X amb captura</a></th>
     <th>DNS A</th>
     <th>DNS 1</th>
     <th>DNS 2</th>
@@ -149,12 +149,12 @@ function url($dominio) {
      $test = dns_get_record($dominio, DNS_NS);
 
 
-     //$URLpagina = "https://siguemedia.com";
+    /* //$URLpagina = "https://siguemedia.com";
     $PagespeedDataGoogle = file_get_contents("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=$url&screenshot=true");
     $PagespeedDataGoogle = json_decode($PagespeedDataGoogle, true);
     $captura = $PagespeedDataGoogle['screenshot']['data'];
     $captura = str_replace(array('_','-'),array('/','+'),$captura); 
-   // echo "<center><img src=\"data:image/jpeg;base64,".$captura."\" /></center>";
+   // echo "<center><img src=\"data:image/jpeg;base64,".$captura."\" /></center>";*/
      
 
      return "
@@ -163,7 +163,7 @@ function url($dominio) {
         <td>" . $url . "</td>
         <td>" . $estatreturn . "</td>
         <!--<td><a href='capturawebgran.php?url=".$url."&enviar=Enviar+URL'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>-->
-        <td><a href='".$url."'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>
+        <!--<td><a href='".$url."'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>-->
         <td>" . $ipdomini . "</td>
         <td>" . $test['0']['target'] . "</td>
         <td>" . $test['1']['target'] . "</td>
