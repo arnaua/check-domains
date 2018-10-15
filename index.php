@@ -27,7 +27,7 @@ tr:nth-child(even) {
   <tr>
     <th>Domini</th>
     <th>Estat</th>
-    <th>Captura<a href="sensecaptura.php">X sense captura</a></th>
+    <th>Captura <a href="sensecaptura.php">X</a></th>
     <th>DNS A</th>
     <th>DNS 1</th>
     <th>DNS 2</th>
