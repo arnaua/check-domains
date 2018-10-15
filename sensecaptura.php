@@ -177,9 +177,7 @@ function url($dominio) {
      
 }
 
-echo "</br>";
-echo "</br>";
-echo "</br>";
+
 
     
     $tiempo_final = microtime(true);
