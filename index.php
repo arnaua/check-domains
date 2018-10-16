@@ -39,6 +39,7 @@ tr:nth-child(even) {
 <?php
 
 echo url("arnauamado.com");
+echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
