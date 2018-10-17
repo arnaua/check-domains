@@ -50,10 +50,26 @@ echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
 echo url("senator.digitalsignagevision.com");
+?><tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
+?><tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
