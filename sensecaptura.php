@@ -32,13 +32,21 @@ tr:nth-child(even) {
     <th>DNS 1</th>
     <th>DNS 2</th>
   </tr>
-
+  
   
 
 
 <?php
 
 echo url("arnauamado.com");
+?><tr>
+    <th>Recubik</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
@@ -51,7 +59,7 @@ echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
 echo url("senator.digitalsignagevision.com");
 ?><tr>
-    <th></th>
+    <th>SigueMedia</th>
     <th></th>
     <th></th>
     <th></th>
@@ -63,7 +71,7 @@ echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
 ?><tr>
-    <th></th>
+    <th>Clientes SigueMedia</th>
     <th></th>
     <th></th>
     <th></th>
