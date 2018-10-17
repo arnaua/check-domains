@@ -70,8 +70,9 @@ echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
+echo url("sensualpinup.com");
 ?><tr>
-    <th>Clientes SigueMedia</th>
+    <th>Clients SigueMedia</th>
     <th></th>
     <th></th>
     <th></th>

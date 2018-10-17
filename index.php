@@ -39,6 +39,14 @@ tr:nth-child(even) {
 <?php
 
 echo url("arnauamado.com");
+?><tr>
+    <th>Recubik</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
@@ -50,10 +58,27 @@ echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
 echo url("senator.digitalsignagevision.com");
+?><tr>
+    <th>SigueMedia</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
+echo url("sensualpinup.com");
+?><tr>
+    <th>Clients SigueMedia</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<?php
 echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
