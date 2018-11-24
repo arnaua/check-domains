@@ -211,6 +211,11 @@ function url($dominio) {
 
      $test = dns_get_record($dominio, DNS_NS);
 
+     //$text = "URL:" . $url . " Estat:" . $estatreturn . "</br>";
+     $text = "Arnau";
+
+    sendMessage('446086312', $text);
+
 
     /* //$URLpagina = "https://siguemedia.com";
     $PagespeedDataGoogle = file_get_contents("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=$url&screenshot=true");
@@ -236,9 +241,7 @@ function url($dominio) {
 
      ";
 
-$text = "" . $url . "" . $estatreturn . "</br>";
 
-sendMessage('446086312', $text);
      
 }
 
