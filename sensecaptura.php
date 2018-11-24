@@ -236,7 +236,9 @@ function url($dominio) {
 
      ";
 
-sendMessage('446086312', "<p>" . $url . "</p><p>" . $estatreturn . "</p>");
+$text = "" . $url . "" . $estatreturn . "</br>";
+
+sendMessage('446086312', $text);
      
 }
 
