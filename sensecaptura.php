@@ -178,9 +178,9 @@ function url($dominio) {
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
      $ipdomini = gethostbyname($dominio);
 
-     
-    $ipdomini = '<a style="color:orange;">'.$ipdomini.'</a>';
-     
+     if ($ipdomini != "54.37.254.123") {
+         $ipdomini = '<a style="color:orange;">'.$ipdomini.'</a>';
+     }
 
      if ($ipdomini == "94.76.201.97") {
          $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
