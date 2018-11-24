@@ -1,6 +1,6 @@
 <?php
 $tiempo_inicial = microtime(true);
-$error = 2;
+$error = 0;
 ?>
 
 <html>
