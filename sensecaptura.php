@@ -105,12 +105,7 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");*/
 
-sendMessage('446086312', "<em>Emphasized text</em><br>
-<strong>Strong text</strong><br>
-<code>A piece of computer code</code><br>
-<samp>Sample output from a computer program</samp><br>
-<kbd>Keyboard input</kbd><br>
-<var>Variable</var>");
+sendMessage('446086312', "Apreciado/a Cliente%0A%0AChek domain fet.%0A%0A");
 
 function sendMessage($chatId, $text) 
     {
@@ -120,7 +115,7 @@ function sendMessage($chatId, $text)
       $query = http_build_query(array(
         'chat_id'=> $chatId,
         'text'=> $text,
-        'parse_mode'=> "HTML", // Optional: Markdown | HTML
+        'parse_mode'=> "Markdown", // Optional: Markdown | HTML
       ));
 
       $response = file_get_contents("$TELEGRAM/sendMessage?$query");
