@@ -1,5 +1,6 @@
 <?php
 $tiempo_inicial = microtime(true);
+$error = 1;
 ?>
 
 <html>
@@ -47,7 +48,7 @@ echo url("arnauamado.com");
     <th></th>
   </tr>
 <?php
-/*echo url("task.recubik.com");
+echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
@@ -57,7 +58,7 @@ echo url("inmo.digitalsignagevision.com");
 echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
-echo url("senator.digitalsignagevision.com");*/
+echo url("senator.digitalsignagevision.com");
 ?><tr>
     <th>SigueMedia</th>
     <th></th>
@@ -79,7 +80,7 @@ echo url("sensualpinup.com");
     <th></th>
   </tr>
 <?php
-/*echo url("bolsasdepasteleria.com");
+echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
 echo url("creixellnatura.org");
@@ -103,7 +104,7 @@ echo url("setsailtgn.com");
 echo url("examsbaixcamp.com");
 echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
-echo url("capbarcelonapadel.com");*/
+echo url("capbarcelonapadel.com");
 
 
 
@@ -185,10 +186,10 @@ function url($dominio) {
 
         } else {
             $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
-            //return false;
+            $error = $error + 1;
         }
      } else {
-         //return false;
+         $error = $error + 1;
          $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
      }
 
@@ -211,14 +212,7 @@ function url($dominio) {
 
      $test = dns_get_record($dominio, DNS_NS);
 
-     $text = "URL:" . $url . " Estat:" . $estatreturn . "</br>";
-     $text = ToString($text);
-     echo $text;
-
-
-     //$text = "Arnau";
-
-    sendMessage('446086312', $text);
+     
 
 
     /* //$URLpagina = "https://siguemedia.com";
@@ -250,6 +244,14 @@ function url($dominio) {
 }
 
 echo "</br>";
+
+    if ($error != 0) {
+        sendMessage('446086312', "Error Servidor en el Check Dominis");
+    }
+
+
+
+    
 
     
     $tiempo_final = microtime(true);
