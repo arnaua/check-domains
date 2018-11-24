@@ -38,7 +38,7 @@ tr:nth-child(even) {
 
 <?php
 
-echo url("arnauamado.com");
+//echo url("arnauamado.com");
 ?><tr>
     <th>Recubik</th>
     <th></th>
@@ -47,7 +47,7 @@ echo url("arnauamado.com");
     <th></th>
   </tr>
 <?php
-echo url("task.recubik.com");
+/*echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
@@ -57,7 +57,7 @@ echo url("inmo.digitalsignagevision.com");
 echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
-echo url("senator.digitalsignagevision.com");
+echo url("senator.digitalsignagevision.com");*/
 ?><tr>
     <th>SigueMedia</th>
     <th></th>
@@ -66,11 +66,11 @@ echo url("senator.digitalsignagevision.com");
     <th></th>
   </tr>
 <?php
-echo url("siguemedia.com");
+/*echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
-echo url("sensualpinup.com");
+echo url("sensualpinup.com");*/
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
@@ -79,7 +79,7 @@ echo url("sensualpinup.com");
     <th></th>
   </tr>
 <?php
-echo url("bolsasdepasteleria.com");
+/*echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
 echo url("creixellnatura.org");
@@ -103,9 +103,35 @@ echo url("setsailtgn.com");
 echo url("examsbaixcamp.com");
 echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
-echo url("capbarcelonapadel.com");
+echo url("capbarcelonapadel.com");*/
 
-sendMessage('446086312', "Hola Arnau");
+sendMessage('446086312', "<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+</body>
+</html>");
 
 function sendMessage($chatId, $text) 
     {
