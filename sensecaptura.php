@@ -66,11 +66,11 @@ echo url("senator.digitalsignagevision.com");*/
     <th></th>
   </tr>
 <?php
-/*echo url("siguemedia.com");
+echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
-echo url("sensualpinup.com");*/
+echo url("sensualpinup.com");
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
@@ -105,7 +105,7 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");*/
 
-sendMessage('446086312', "Apreciado/a Cliente%0A%0AChek domain fet.%0A%0Asasa");
+
 
 function sendMessage($chatId, $text) 
     {
@@ -115,6 +115,7 @@ function sendMessage($chatId, $text)
       $query = http_build_query(array(
         'chat_id'=> $chatId,
         'text'=> $text,
+        'parse_mode'=> "HTML", // Optional: Markdown | HTML
       ));
 
       $response = file_get_contents("$TELEGRAM/sendMessage?$query");
@@ -235,7 +236,7 @@ function url($dominio) {
 
      ";
 
-
+sendMessage('446086312', "<p>" . $url . "</p><p>" . $estatreturn . "</p>");
      
 }
 
