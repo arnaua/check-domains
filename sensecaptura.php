@@ -105,33 +105,12 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");*/
 
-sendMessage('446086312', "<html>
-<head>
-<style>
-table, th, td {
-    border: 1px solid black;
-}
-</style>
-</head>
-<body>
-
-<table>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$80</td>
-  </tr>
-</table>
-
-</body>
-</html>");
+sendMessage('446086312', "<em>Emphasized text</em><br>
+<strong>Strong text</strong><br>
+<code>A piece of computer code</code><br>
+<samp>Sample output from a computer program</samp><br>
+<kbd>Keyboard input</kbd><br>
+<var>Variable</var>");
 
 function sendMessage($chatId, $text) 
     {
