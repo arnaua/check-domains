@@ -105,6 +105,23 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");
 
+sendMessage('446086312', "Hola Arnau");
+
+function sendMessage($chatId, $text) 
+    {
+      $TOKEN = "701866076:AAGVaqLebSl35J4hFd2Wyuc1ijt0d0_sRZI";
+      $TELEGRAM = "https://api.telegram.org:443/bot$TOKEN"; 
+
+      $query = http_build_query(array(
+        'chat_id'=> $chatId,
+        'text'=> $text,
+        'parse_mode'=> "HTML", // Optional: Markdown | HTML
+      ));
+
+      $response = file_get_contents("$TELEGRAM/sendMessage?$query");
+      return $response;
+    }
+
 
 
 
