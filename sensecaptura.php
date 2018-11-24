@@ -38,7 +38,7 @@ tr:nth-child(even) {
 
 <?php
 
-//echo url("arnauamado.com");
+echo url("arnauamado.com");
 ?><tr>
     <th>Recubik</th>
     <th></th>
@@ -66,11 +66,11 @@ echo url("senator.digitalsignagevision.com");*/
     <th></th>
   </tr>
 <?php
-echo url("siguemedia.com");
+/*echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
-echo url("sensualpinup.com");
+echo url("sensualpinup.com");*/
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
