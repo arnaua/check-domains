@@ -211,8 +211,8 @@ function url($dominio) {
 
      $test = dns_get_record($dominio, DNS_NS);
 
-     //$text = "URL:" . $url . " Estat:" . $estatreturn . "</br>";
-     $text = "Arnau";
+     $text = "URL:" . $url . " Estat:" . $estatreturn . "</br>";
+     //$text = "Arnau";
 
     sendMessage('446086312', $text);
 
