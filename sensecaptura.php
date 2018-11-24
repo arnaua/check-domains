@@ -66,11 +66,11 @@ echo url("senator.digitalsignagevision.com");*/
     <th></th>
   </tr>
 <?php
-/*echo url("siguemedia.com");
+echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
-echo url("sensualpinup.com");*/
+echo url("sensualpinup.com");
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
@@ -212,6 +212,10 @@ function url($dominio) {
      $test = dns_get_record($dominio, DNS_NS);
 
      $text = "URL:" . $url . " Estat:" . $estatreturn . "</br>";
+     $text = ToString($text);
+     echo $text;
+
+
      //$text = "Arnau";
 
     sendMessage('446086312', $text);
