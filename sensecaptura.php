@@ -182,6 +182,10 @@ function url($dominio) {
          $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
      }
 
+     if ($ipdomini == "54.37.254.123") {
+         $ipdomini = '<a style="color:green;">'.$ipdomini.'</a>';
+     }
+
      $test = dns_get_record($dominio, DNS_NS);
 
 
