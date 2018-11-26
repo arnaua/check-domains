@@ -186,10 +186,12 @@ function url($dominio) {
 
         } else {
             $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
-            $error++;
+            sendMessage('446086312', "Error Servidor en el Check Dominis");
+            sendMessage('446086312', $url);
         }
      } else {
-         $error++;
+         sendMessage('446086312', "Error Servidor en el Check Dominis");
+         sendMessage('446086312', $url);
          $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
      }
 
