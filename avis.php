@@ -1,6 +1,8 @@
 <?php
 $tiempo_inicial = microtime(true);
 $error = 0;
+
+echo "Check Domains";
   
 
 
