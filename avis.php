@@ -187,8 +187,10 @@ function url($dominio) {
 $keyboard = [
     'inline_keyboard' => [
         [
-            ['text' => 'forward me to groups', 'callback_data' => 'someString'],
-            ['text' => 'forward me to groups', 'callback_data' => 'someString']
+            ['text' => 'Programar plantilla', 'callback_data' => 'Programar'],
+            ['text' => 'Editar plantilla', 'callback_data' => 'Editar'],
+            ['text' => 'Arnau', 'callback_data' => 'Arnau'],
+            ['text' => 'Reverter', 'callback_data' => 'Reverter']
         ]
     ]
     ];
