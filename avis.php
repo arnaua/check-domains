@@ -182,7 +182,7 @@ function url($dominio) {
 
     
         $chatId = "446086312";
-        $response = "Ciao , benvenuto!";
+        $response = "Tria una opcio: ";
 
 $keyboard = [
     'inline_keyboard' => [
