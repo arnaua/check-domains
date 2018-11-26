@@ -147,7 +147,8 @@ function url($dominio) {
      
 }
 
-$txt = 'as asasdsadasdasdadasd asd asd asda sd asd ';
+$txt = 'asd '.$url;
+$txt = 'asda sd asd ';
 $txt .= " \n ";
 $txt .= 'Thanks for joining, Every day at almost 18:30 GMT an intersting video will be sent';
 sendMessage('446086312', $txt);
