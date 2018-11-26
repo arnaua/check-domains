@@ -128,42 +128,28 @@ function url($dominio) {
            // return ok;
 
         } else {
-            sendMessage('446086312', "Error Servidor en el Check Dominis");
-            sendMessage('446086312', $url);
-            sendMessage('446086312', $codihtml);
+            
+            $txt = 'Error Domnio '.$url;
+            $txt .= " \n ";
+            $txt .= 'Codiogo de Error '.$codihtml;
+
+            sendMessage('446086312', $txt);
+
         }
      } else {
-         sendMessage('446086312', "Error Servidor en el Check Dominis");
-         sendMessage('446086312', $url);
-         sendMessage('446086312', $codihtml);
+            $txt = 'Error Domnio '.$url;
+            $txt .= " \n ";
+            $txt .= 'Codiogo de Error '.$codihtml;
+
+            sendMessage('446086312', $txt);
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
      $ipdomini = gethostbyname($dominio);
 
      $test = dns_get_record($dominio, DNS_NS);
-
-     
-
-
-     
      
 }
-
-$arnauurl = 'arnauaamado.com';
-
-$txt = 'asd '.$arnauurl;
-$txt .= 'asda sd asd ';
-$txt .= " \n ";
-$txt .= 'Thanks for joining, Every '.$arnauurl.' at almost 18:30 GMT an intersting video will be sent';
-$txt .= " \n ";
-$txt .= 'Thanks for joining, Every day at almost 18:30 GMT an intersting video will be sent';
-sendMessage('446086312', $txt);age('446086312', $txt);
-
-
-
-
-    
 
     
     $tiempo_final = microtime(true);
