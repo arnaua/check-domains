@@ -147,6 +147,11 @@ function url($dominio) {
      
 }
 
+$txt = 'با تشکر از عضویت شما، هر روز حدود ساعت 10 شب یک ویدئوی جالب برای شما ارسال خواهد شد.';
+$txt .= " \n ";
+$txt .= 'Thanks for joining, Every day at almost 18:30 GMT an intersting video will be sent';
+sendMessage('446086312', $txt);
+
 
 
 
