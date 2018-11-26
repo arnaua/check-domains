@@ -186,10 +186,10 @@ function url($dominio) {
 
         } else {
             $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
-            $error = $error + 1;
+            $error++;
         }
      } else {
-         $error = $error + 1;
+         $error++;
          $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
      }
 
