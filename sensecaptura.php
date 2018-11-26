@@ -245,6 +245,8 @@ function url($dominio) {
 
 echo "</br>";
 
+    echo $error;
+
     if ($error != 0) {
         sendMessage('446086312', "Error Servidor en el Check Dominis");
         sendMessage('446086312', $error);
