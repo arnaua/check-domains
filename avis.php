@@ -52,6 +52,22 @@ echo url("capbarcelonapadel.com");
 echo url("arnauamado.com");
 
 
+function send($method, $data)
+{
+    $url = "https://api.telegram.org/bot701866076:AAGVaqLebSl35J4hFd2Wyuc1ijt0d0_sRZI". "/" . $method;
+
+    if (!$curld = curl_init()) {
+        exit;
+    }
+    curl_setopt($curld, CURLOPT_POST, true);
+    curl_setopt($curld, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($curld, CURLOPT_URL, $url);
+    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+    $output = curl_exec($curld);
+    curl_close($curld);
+    return $output;
+}
+
 function sendMessage($chatId, $text) 
     {
       $TOKEN = "701866076:AAGVaqLebSl35J4hFd2Wyuc1ijt0d0_sRZI";
@@ -160,6 +176,32 @@ function url($dominio) {
     
     
     echo "Temps que a tardat: " . $tiempo . ".";
+
+
+
+
+    
+        $chatId = "446086312";
+        $response = "Ciao , benvenuto!";
+
+$keyboard = [
+    'inline_keyboard' => [
+        [
+            ['text' => 'forward me to groups', 'callback_data' => 'someString']
+        ]
+    ]
+    ];
+    $encodedKeyboard = json_encode($keyboard);
+    $parameters = 
+        array(
+            'chat_id' => $chatId, 
+            'text' => $response, 
+            'reply_markup' => $encodedKeyboard
+        );
+
+    send('sendMessage', $parameters);
+
+
 
     
 
