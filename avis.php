@@ -128,10 +128,12 @@ function url($dominio) {
         } else {
             sendMessage('446086312', "Error Servidor en el Check Dominis");
             sendMessage('446086312', $url);
+            sendMessage('446086312', $codihtml);
         }
      } else {
          sendMessage('446086312', "Error Servidor en el Check Dominis");
          sendMessage('446086312', $url);
+         sendMessage('446086312', $codihtml);
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
