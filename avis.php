@@ -143,16 +143,23 @@ function url($dominio) {
 
      $test = dns_get_record($dominio, DNS_NS);
 
-     
-     
-}
-
-$txt = 'asd '.$url;
+     $txt = 'asd '.$url;
 $txt = 'asda sd asd ';
 $txt .= " \n ";
 $txt .= 'Thanks for joining, Every day at almost 18:30 GMT an intersting video will be sent';
 sendMessage('446086312', $txt);
 
+
+     
+     
+}
+
+/*$txt = 'asd '.$url;
+$txt = 'asda sd asd ';
+$txt .= " \n ";
+$txt .= 'Thanks for joining, Every day at almost 18:30 GMT an intersting video will be sent';
+sendMessage('446086312', $txt);
+*/
 
 
 
