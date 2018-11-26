@@ -6,7 +6,6 @@ echo "Check Domains";
   
 
 
-echo url("arnauamado.com");
 
 echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
@@ -50,6 +49,7 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");
 
+echo url("arnauamado.com");
 
 
 function sendMessage($chatId, $text) 
