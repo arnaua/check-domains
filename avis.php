@@ -7,7 +7,7 @@ echo "Check Domains";
 
 
 
-echo url("task.recubik.com");
+/*echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
@@ -46,10 +46,10 @@ echo url("soniasafineblanking.com");
 echo url("setsailtgn.com");
 echo url("examsbaixcamp.com");
 echo url("emiliodiazlaraescritor.com");
-echo url("puentesdeluces.com");
-echo url("capbarcelonapadel.com");
+echo url("puentesdeluces.com");*/
+//echo url("capbarcelonapadel.com");
 
-echo url("arnauamado.com");
+//echo url("arnauamado.com");
 
 
 function send($method, $data)
