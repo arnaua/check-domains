@@ -129,18 +129,18 @@ function url($dominio) {
 
         } else {
             
-            $txt = 'Error Domnio '.$url;
+            $txt = 'Error Domnio: '.$url;
             $txt .= " \n";
-            $txt .= 'Codiogo de Error '.$codihtml;
+            $txt .= 'Codiogo de Error: '.$codihtml;
 
             sendMessage('446086312', $txt);
 
         }
      } else {
             
-            $txt = 'Error Domnio '.$url;
+            $txt = 'Error Domnio: '.$url;
             $txt .= " \n";
-            $txt .= 'Codiogo de Error '.$codihtml;
+            $txt .= 'Codiogo de Error: '.$codihtml;
 
             sendMessage('446086312', $txt);
      }
