@@ -1,53 +1,11 @@
 <?php
 $tiempo_inicial = microtime(true);
 $error = 0;
-?>
-
-<html>
-<head>
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-<table>
-  <tr>
-    <th>Domini</th>
-    <th>Estat</th>
-    <!--<th>Captura<a href="index.php">X amb captura</a></th>-->
-    <th>DNS A</th>
-    <th>DNS 1</th>
-    <th>DNS 2</th>
-  </tr>
-  
   
 
-
-<?php
 
 echo url("arnauamado.com");
-?><tr>
-    <th>Recubik</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-<?php
+
 echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
@@ -59,27 +17,11 @@ echo url("premium.digitalsignagevision.com");
 echo url("standard.digitalsignagevision.com");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
 echo url("senator.digitalsignagevision.com");
-?><tr>
-    <th>SigueMedia</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-<?php
 echo url("siguemedia.com");
 echo url("cloud.siguemedia.com");
 echo url("examsbaixcamp.siguemedia.com");
 echo url("cambrapropietat.siguemedia.com");
 echo url("sensualpinup.com");
-?><tr>
-    <th>Clients SigueMedia</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-<?php
 echo url("bolsasdepasteleria.com");
 echo url("bossa.cat");
 echo url("chefmecsa.com");
@@ -106,6 +48,22 @@ echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");
 
+
+
+function sendMessage($chatId, $text) 
+    {
+      $TOKEN = "701866076:AAGVaqLebSl35J4hFd2Wyuc1ijt0d0_sRZI";
+      $TELEGRAM = "https://api.telegram.org:443/bot$TOKEN"; 
+
+      $query = http_build_query(array(
+        'chat_id'=> $chatId,
+        'text'=> $text,
+        'parse_mode'=> "HTML", // Optional: Markdown | HTML
+      ));
+
+      $response = file_get_contents("$TELEGRAM/sendMessage?$query");
+      return $response;
+    }
 
 
 
@@ -165,71 +123,30 @@ function url($dominio) {
         //Aceptar solo respuesta 200 (Ok), 301 (redirección permanente) o 302 (redirección temporal)
         $accepted_response = array( 200, 301, 302 );
         if( in_array( $httpcode, $accepted_response ) ) {
-           // return true;
-            $estatreturn= '<a style="color:green;">OK</a>';
+           // return ok;
 
         } else {
-            $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
-            $error = $error + 1;
+            sendMessage('446086312', "Error Servidor en el Check Dominis");
+            sendMessage('446086312', $url);
         }
      } else {
-         $error = $error + 1;
-         $estatreturn= '<a style="color:red;">ERROR ('.$codihtml.')</a>';
+         sendMessage('446086312', "Error Servidor en el Check Dominis");
+         sendMessage('446086312', $url);
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
      $ipdomini = gethostbyname($dominio);
 
-     if ($ipdomini != "54.37.254.123") {
-         $ipdomini = '<a style="color:orange;">'.$ipdomini.'</a>';
-     }
-
-     if ($ipdomini == "94.76.201.97") {
-         $ipdomini = '<a style="color:red;">'.$ipdomini.'</a>';
-     }
-
-     if ($ipdomini == "54.37.254.123") {
-         $ipdomini = '<a style="color:green;">'.$ipdomini.'</a>';
-     }
-
-
-
      $test = dns_get_record($dominio, DNS_NS);
 
      
-
-
-    /* //$URLpagina = "https://siguemedia.com";
-    $PagespeedDataGoogle = file_get_contents("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=$url&screenshot=true");
-    $PagespeedDataGoogle = json_decode($PagespeedDataGoogle, true);
-    $captura = $PagespeedDataGoogle['screenshot']['data'];
-    $captura = str_replace(array('_','-'),array('/','+'),$captura); 
-   // echo "<center><img src=\"data:image/jpeg;base64,".$captura."\" /></center>";*/
-     
-
-     return "
-
-    <tr>
-        <td>" . $url . "</td>
-        <td>" . $estatreturn . "</td>
-        <!--<td><a href='capturawebgran.php?url=".$url."&enviar=Enviar+URL'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>-->
-        <!--<td><a href='".$url."'><center><img src=\"data:image/jpeg;base64,".$captura."\" /></center></a></td>-->
-        <td>" . $ipdomini . "</td>
-        <td>" . $test['0']['target'] . "</td>
-        <td>" . $test['1']['target'] . "</td>
-        
-    </tr>
-
-
-     ";
-
-
      
 }
 
-echo "</br>";
 
-     
+
+
+    
 
     
     $tiempo_final = microtime(true);
