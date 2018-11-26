@@ -183,14 +183,20 @@ function url($dominio) {
     
         $chatId = "446086312";
         $response = "Tria una opcio: ";
+        $response .= " \n";
+        $response .= "Menu:";
 
 $keyboard = [
     'inline_keyboard' => [
         [
             ['text' => 'Programar plantilla', 'callback_data' => 'Programar'],
             ['text' => 'Editar plantilla', 'callback_data' => 'Editar'],
-            ['text' => 'Arnau', 'callback_data' => 'Arnau'],
-            ['text' => 'Reverter', 'callback_data' => 'Reverter']
+            ['text' => 'Arnau', 'callback_data' => 'Arnau']
+        ],
+        [
+            ['text' => 'Pantallas', 'callback_data' => 'Pantallas'],
+            ['text' => 'Usuaris', 'callback_data' => 'Usuaris'],
+            ['text' => 'Reverter', 'callback_data' => 'reverter']
         ]
     ]
     ];
