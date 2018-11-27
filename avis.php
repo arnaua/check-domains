@@ -7,7 +7,7 @@ echo "Check Domains";
 
 
 
-/*echo url("task.recubik.com");
+echo url("task.recubik.com");
 echo url("digitalsignageweb.com");
 echo url("digitalsignagevision.com");
 echo url("business.digitalsignagevision.com");
@@ -46,15 +46,15 @@ echo url("soniasafineblanking.com");
 echo url("setsailtgn.com");
 echo url("examsbaixcamp.com");
 echo url("emiliodiazlaraescritor.com");
-echo url("puentesdeluces.com");*/
-//echo url("capbarcelonapadel.com");
+echo url("puentesdeluces.com");
+echo url("capbarcelonapadel.com");
 
-//echo url("arnauamado.com");
+echo url("arnauamado.com");
 
 
 function send($method, $data)
 {
-    $url = "https://api.telegram.org/bot701866076:AAGVaqLebSl35J4hFd2Wyuc1ijt0d0_sRZI". "/" . $method;
+    $url = "https://api.telegram.org/bot775720752:AAHT1z9wbO-IDhlqsNsP9J_91dtaROyDmrY". "/" . $method;
 
     if (!$curld = curl_init()) {
         exit;
@@ -181,7 +181,7 @@ function url($dominio) {
 
 
     
-        $chatId = "446086312";
+       /*$chatId = "446086312";
         $response = "Tria una opcio: ";
         $response .= " \n";
         $response .= "Menu:";
@@ -193,7 +193,7 @@ $keyboard = [
             ['text' => 'Editar plantilla', 'callback_data' => 'Editar'],
             ['text' => 'Arnau', 'callback_data' => 'Arnau']
         ],
-        [
+        [ 
             ['text' => 'Pantallas', 'callback_data' => 'Pantallas'],
             ['text' => 'Usuaris', 'callback_data' => 'Usuaris'],
             ['text' => 'Reverter', 'callback_data' => 'reverter']
@@ -208,7 +208,7 @@ $keyboard = [
             'reply_markup' => $encodedKeyboard
         );
 
-    send('sendMessage', $parameters);
+    send('sendMessage', $parameters);*/
 
 
 
