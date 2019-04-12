@@ -95,7 +95,7 @@ echo url("repararbanyera.cat");
 echo url("xn--repararbaerasmadrid-33b.com");
 echo url("xn--repararbaerasvalencia-kbc.com");
 echo url("xn--arreglarbaeras-znb.com");
-echo url("terapiavilanova.com");
+//echo url("terapiavilanova.com");
 echo url("yoigonegociosbcn.com");
 echo url("yoigonegociostgn.com");
 echo url("repararbanyera.cat");
@@ -105,6 +105,14 @@ echo url("examsbaixcamp.com");
 echo url("emiliodiazlaraescritor.com");
 echo url("puentesdeluces.com");
 echo url("capbarcelonapadel.com");
+
+echo url("optimaweb.org");
+echo url("finquessegarra.com");
+echo url("linealhosting.com");
+echo url("carolinareigterapeuta.com");
+echo url("clinicadentalpalazon.com");
+echo url("hmt-cm.com");
+echo url("floresyburgos.com");
 
 
 

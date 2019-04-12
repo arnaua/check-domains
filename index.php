@@ -97,6 +97,22 @@ echo url("yoigonegociosbcn.com");
 echo url("yoigonegociostgn.com");
 echo url("repararbanyera.cat");
 
+echo url("soniasafineblanking.com");
+echo url("setsailtgn.com");
+echo url("examsbaixcamp.com");
+echo url("emiliodiazlaraescritor.com");
+echo url("puentesdeluces.com");
+echo url("capbarcelonapadel.com");
+
+
+echo url("optimaweb.org");
+echo url("finquessegarra.com");
+echo url("linealhosting.com");
+echo url("carolinareigterapeuta.com");
+echo url("clinicadentalpalazon.com");
+echo url("hmt-cm.com");
+echo url("floresyburgos.com");
+
 
 function conversorSegundosHoras($tiempo_en_segundos) {
     $horas = floor($tiempo_en_segundos / 3600);
