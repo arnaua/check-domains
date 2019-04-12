@@ -92,7 +92,7 @@ echo url("reformasbaixllobregat.com");
 echo url("reformatuinmueble.com");
 echo url("xn--repararbaerasmadrid-33b.com");
 echo url("xn--repararbaerasvalencia-kbc.com");
-echo url("terapiavilanova.com");
+//echo url("terapiavilanova.com");
 echo url("yoigonegociosbcn.com");
 echo url("yoigonegociostgn.com");
 echo url("repararbanyera.cat");
