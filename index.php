@@ -38,7 +38,7 @@ tr:nth-child(even) {
 
 <?php
 
-echo url("arnauamado.com");
+echo url("arnauamado.com", "https");
 ?><tr>
     <th>Recubik</th>
     <th></th>
@@ -47,17 +47,17 @@ echo url("arnauamado.com");
     <th></th>
   </tr>
 <?php
-echo url("task.recubik.com");
-echo url("digitalsignageweb.com");
-echo url("digitalsignagevision.com");
-echo url("business.digitalsignagevision.com");
-echo url("crm.digitalsignagevision.com");
-echo url("scrm.digitalsignagevision.com");
-echo url("inmo.digitalsignagevision.com");
-echo url("premium.digitalsignagevision.com");
-echo url("standard.digitalsignagevision.com");
+echo url("task.recubik.com", "https://");
+echo url("digitalsignageweb.com", "https://");
+echo url("digitalsignagevision.com", "https://");
+echo url("business.digitalsignagevision.com", "https://");
+echo url("crm.digitalsignagevision.com", "https://");
+echo url("scrm.digitalsignagevision.com", "https://");
+echo url("inmo.digitalsignagevision.com", "https://");
+echo url("premium.digitalsignagevision.com", "https://");
+echo url("standard.digitalsignagevision.com", "https://");
 //echo url("senator.digitalsignagevision.com/tiempo/Tiempo%20Barajas.html");
-echo url("senator.digitalsignagevision.com");
+echo url("senator.digitalsignagevision.com", "https://");
 ?><tr>
     <th>SigueMedia</th>
     <th></th>
@@ -66,11 +66,11 @@ echo url("senator.digitalsignagevision.com");
     <th></th>
   </tr>
 <?php
-echo url("siguemedia.com");
-echo url("cloud.siguemedia.com");
-echo url("examsbaixcamp.siguemedia.com");
-echo url("cambrapropietat.siguemedia.com");
-echo url("sensualpinup.com");
+echo url("siguemedia.com", "https://");
+echo url("cloud.siguemedia.com", "https://");
+echo url("examsbaixcamp.siguemedia.com", "https://");
+echo url("cambrapropietat.siguemedia.com", "https://");
+echo url("sensualpinup.com", "https://");
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
@@ -79,39 +79,39 @@ echo url("sensualpinup.com");
     <th></th>
   </tr>
 <?php
-echo url("bolsasdepasteleria.com");
-echo url("bossa.cat");
-echo url("chefmecsa.com");
-echo url("creixellnatura.org");
-echo url("englishangout.com");
-echo url("espaiuniversal.com");
-echo url("esportadaptat.org");
-echo url("pescadoacasa.com");
-echo url("rechousevideo.com");
-echo url("reformasbaixllobregat.com");
-echo url("reformatuinmueble.com");
-echo url("xn--repararbaerasmadrid-33b.com");
-echo url("xn--repararbaerasvalencia-kbc.com");
+echo url("bolsasdepasteleria.com", "https://");
+echo url("bossa.cat", "https://");
+echo url("chefmecsa.com", "https://");
+echo url("creixellnatura.org", "https://");
+echo url("englishangout.com", "https://");
+echo url("espaiuniversal.com", "https://");
+echo url("esportadaptat.org", "https://");
+echo url("pescadoacasa.com", "https://");
+echo url("rechousevideo.com", "https://");
+echo url("reformasbaixllobregat.com", "https://");
+echo url("reformatuinmueble.com", "https://");
+echo url("xn--repararbaerasmadrid-33b.com", "https://");
+echo url("xn--repararbaerasvalencia-kbc.com", "https://");
 //echo url("terapiavilanova.com");
-echo url("yoigonegociosbcn.com");
-echo url("yoigonegociostgn.com");
-echo url("repararbanyera.cat");
+echo url("yoigonegociosbcn.com", "https://");
+echo url("yoigonegociostgn.com", "https://");
+echo url("repararbanyera.cat", "https://");
 
-echo url("soniasafineblanking.com");
-echo url("setsailtgn.com");
-echo url("examsbaixcamp.com");
-echo url("emiliodiazlaraescritor.com");
-echo url("puentesdeluces.com");
-echo url("capbarcelonapadel.com");
+echo url("soniasafineblanking.com", "https://");
+echo url("setsailtgn.com", "https://");
+echo url("examsbaixcamp.com", "https://");
+echo url("emiliodiazlaraescritor.com", "https://");
+echo url("puentesdeluces.com", "https://");
+echo url("capbarcelonapadel.com", "https://");
 
 
-echo url("optimaweb.org");
-echo url("finquessegarra.com");
-echo url("linealhosting.com");
-echo url("carolinareigterapeuta.com");
-echo url("clinicadentalpalazon.com");
-echo url("hmt-cm.com");
-echo url("floresyburgos.com");
+echo url("optimaweb.org", "http://");
+echo url("finquessegarra.com", "https://");
+echo url("linealhosting.com", "https://");
+echo url("carolinareigterapeuta.com", "https://");
+echo url("clinicadentalpalazon.com", "https://");
+echo url("hmt-cm.com", "https://");
+echo url("floresyburgos.com", "https://");
 
 
 function conversorSegundosHoras($tiempo_en_segundos) {
@@ -135,13 +135,13 @@ function conversorSegundosHoras($tiempo_en_segundos) {
     return $hora_texto;
 }
 
-function url($dominio) {
+function url($dominio, $https) {
  
     $estatreturn= "";
     $DNSA= "";
     $DNSNS1= "";
     $DNSNS2= "";
-    $url = "https://";
+    $url = $https;
     $url .= "$dominio";
     $codihtml = "";
     $ipdomini = "";
