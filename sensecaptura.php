@@ -39,7 +39,7 @@ tr:nth-child(even) {
 
 <?php
 
-echo url("arnauamado.com", "https");
+echo url("arnauamado.com", "https://");
 ?><tr>
     <th>Recubik</th>
     <th></th>
