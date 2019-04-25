@@ -49,7 +49,7 @@ echo url("emiliodiazlaraescritor.com", "https://");
 echo url("puentesdeluces.com", "https://");
 echo url("capbarcelonapadel.com", "https://");
 
-echo url("optimaweb.org", "https://");
+echo url("optimaweb.org", "http://");
 echo url("finquessegarra.com", "https://");
 echo url("linealhosting.com", "https://");
 echo url("carolinareigterapeuta.com", "https://");
