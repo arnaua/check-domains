@@ -162,11 +162,11 @@ function url($dominio, $https) {
         }
      } else {
             
-            $txt = 'Error Domnio: '.$url;
+            /*$txt = 'Error Domnio: '.$url;
             $txt .= " \n";
             $txt .= 'Codiogo de Error: '.$codihtml;
 
-            sendMessage('446086312', $txt);
+            sendMessage('446086312', $txt);*/
      }
 
      $result = dns_get_record("arnauamado.com", DNS_ANY, $authns, $addtl);
