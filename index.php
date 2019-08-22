@@ -48,6 +48,7 @@ echo url("arnauamado.com", "https://");
   </tr>
 <?php
 echo url("task.recubik.com", "https://");
+echo url("distribuidorcarteleriadigital.com", "https://");
 echo url("digitalsignageweb.com", "https://");
 echo url("digitalsignagevision.com", "https://");
 echo url("business.digitalsignagevision.com", "https://");
@@ -71,6 +72,9 @@ echo url("cloud.siguemedia.com", "https://");
 echo url("examsbaixcamp.siguemedia.com", "https://");
 echo url("cambrapropietat.siguemedia.com", "https://");
 echo url("sensualpinup.com", "https://");
+echo url("endesarrolloweb.com", "https://");
+echo url("siguemedia.net", "https://");
+echo url("aprendeareciclar.com", "https://");
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>
@@ -112,6 +116,13 @@ echo url("carolinareigterapeuta.com", "https://");
 echo url("clinicadentalpalazon.com", "https://");
 echo url("hmt-cm.com", "https://");
 echo url("floresyburgos.com", "https://");
+
+
+echo url("fincaspremium.com", "https://");
+echo url("englishangoutonline.com", "https://");
+echo url("coachpsicologo.com", "https://");
+echo url("reformasgava.com", "https://");
+echo url("xn--arreglarbaeras-znb.com", "https://");
 
 
 function conversorSegundosHoras($tiempo_en_segundos) {

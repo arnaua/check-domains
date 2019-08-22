@@ -59,6 +59,17 @@ echo url("floresyburgos.com", "https://");
 
 echo url("arnauamado.com", "https://");
 
+echo url("fincaspremium.com", "https://");
+echo url("englishangoutonline.com", "https://");
+echo url("coachpsicologo.com", "https://");
+echo url("reformasgava.com", "https://");
+echo url("xn--arreglarbaeras-znb.com", "https://");
+
+echo url("endesarrolloweb.com", "https://");
+echo url("distribuidorcarteleriadigital.com", "https://");
+echo url("siguemedia.net", "https://");
+echo url("aprendeareciclar.com", "https://");
+
 
 function send($method, $data)
 {
