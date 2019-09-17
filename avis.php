@@ -24,7 +24,7 @@ echo url("examsbaixcamp.siguemedia.com", "https://");
 echo url("cambrapropietat.siguemedia.com", "https://");
 echo url("sensualpinup.com", "https://");
 echo url("bolsasdepasteleria.com", "https://");
-echo url("bossa.cat", "https://");
+//echo url("bossa.cat", "https://");
 echo url("chefmecsa.com", "https://");
 echo url("creixellnatura.org", "https://");
 echo url("englishangout.com", "https://");

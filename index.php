@@ -84,7 +84,7 @@ echo url("aprendeareciclar.com", "https://");
   </tr>
 <?php
 echo url("bolsasdepasteleria.com", "https://");
-echo url("bossa.cat", "https://");
+//echo url("bossa.cat", "https://");
 echo url("chefmecsa.com", "https://");
 echo url("creixellnatura.org", "https://");
 echo url("englishangout.com", "https://");
