@@ -75,7 +75,7 @@ echo url("cambrapropietat.siguemedia.com", "https://");
 echo url("sensualpinup.com", "https://");
 echo url("endesarrolloweb.com", "https://");
 echo url("siguemedia.net", "https://");
-echo url("aprendeareciclar.com", "https://");
+//echo url("aprendeareciclar.com", "https://");
 ?><tr>
     <th>Clients SigueMedia</th>
     <th></th>

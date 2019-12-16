@@ -68,7 +68,7 @@ echo url("xn--arreglarbaeras-znb.com", "https://");
 echo url("endesarrolloweb.com", "https://");
 echo url("distribuidorcarteleriadigital.com", "https://");
 echo url("siguemedia.net", "https://");
-echo url("aprendeareciclar.com", "https://");
+//echo url("aprendeareciclar.com", "https://");
 
 
 function send($method, $data)
